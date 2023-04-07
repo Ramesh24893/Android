@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:shadowColor="@android:color/holo_blue_dark"
+        android:singleLine="true"
+        android:shadowDx="-4"
+        android:shadowDy="-4"
+        android:shadowRadius="3"
+
+
+        android:maxHeight="10sp"
+        android:lastBaselineToBottomHeight="0.1dp"
+        android:letterSpacing="0.1"
+
+        android:id="@+id/textView"
+        android:layout_width="150sp"
+        android:layout_height="80sp"
+        android:text="Hello World! I amhasjha sxjdfsdcddvvf  dfvdfvvdvfv dfvdvv haaxuauxx Ramesh "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:elegantTextHeight="true"
+        android:textIsSelectable="true"
+
+
+
+        />
+
+    <EditText
+
+        android:singleLine="true"
+        android:hint="name"
+        android:drawableTint="@color/black"
+
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+
+        android:ems="10"
+        android:inputType="textPersonName"
+
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

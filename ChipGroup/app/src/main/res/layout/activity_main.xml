@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip2"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            app:checkedIcon="@drawable/ic_launcher_foreground"
+            app:chipBackgroundColor="@color/teal_200"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip3"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipBackgroundColor="@color/teal_200"
+            android:checked="true"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip4"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            app:chipBackgroundColor="@color/teal_200"/>
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip6"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip7"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip8"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+    </com.google.android.material.chip.ChipGroup>
+
+
+</LinearLayout>

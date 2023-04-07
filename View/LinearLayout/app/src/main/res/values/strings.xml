@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LinearLayout</string>
+    <string name="science">Science</string>
+    <string name="submit">Submit</string>
+    <string name="sports">Sports</string>
+    <string name="maths">Maths</string>
+    <string name="area_of_interest">Area of Interest</string>
+    <string name="year">Year</string>
+    <string name="department">Department</string>
+    <string name="others">Others</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="college_name">College Name</string>
+    <string name="address">Address</string>
+    <string name="lastname">LastName</string>
+    <string name="middlename">MiddleName</string>
+</resources>

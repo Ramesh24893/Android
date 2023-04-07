@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:orientation="vertical"
+        android:text="What belongs in your burger"
+        android:textAllCaps="true"
+        android:textScaleX="0.6"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgMeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/rbBeef"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="beef" />
+
+        <RadioButton
+            android:id="@+id/rbChicken"
+
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="chicken" />
+
+        <RadioButton
+            android:id="@+id/rbPork"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="pork" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cbCheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Cheese"
+        app:layout_constraintBottom_toTopOf="@+id/cbOnion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgMeat"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/cbOnion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oninion"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox3"
+        app:layout_constraintStart_toStartOf="@+id/cbCheese" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="salad"
+        app:layout_constraintStart_toStartOf="@+id/cbOnion"
+        app:layout_constraintTop_toBottomOf="@+id/cbOnion" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="cbCheese" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="cbCheese,checkBox3,cbOnion" />
+
+    <Button
+        android:id="@+id/btOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="ORDER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:autoSizeTextType="uniform"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btOrder" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

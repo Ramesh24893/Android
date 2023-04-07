@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-2dp">
+
+    <TextView
+
+        android:fontFamily="cursive"
+        android:id="@+id/BaseAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="42dp"
+        android:text="Base"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTipPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/BaseAmount"
+        app:layout_constraintTop_toBottomOf="@+id/BaseAmount"
+        tools:text="30" />
+
+    <TextView
+        android:textColorHighlight="@android:color/holo_blue_bright"
+        android:id="@+id/tipAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:text="Tip"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@+id/tvTipPercent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTipPercent" />
+
+    <TextView
+
+        android:id="@+id/totalAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Total"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@+id/tipAmt"
+        app:layout_constraintTop_toBottomOf="@+id/tipAmt" />
+
+    <SeekBar
+        android:id="@+id/seekBarTip"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:max="30"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTipPercent"
+        app:layout_constraintStart_toStartOf="@+id/etBaseAmount"
+        app:layout_constraintTop_toTopOf="@+id/tvTipPercent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:shadowColor="@color/design_default_color_on_primary"
+        android:id="@+id/tvTipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/tipAmt"
+        app:layout_constraintStart_toStartOf="@+id/seekBarTip"
+        app:layout_constraintTop_toTopOf="@+id/tipAmt"
+        app:layout_constraintVertical_bias="0.5"
+        tools:text="100" />
+
+    <EditText
+
+        android:id="@+id/tvTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/totalAmt"
+        app:layout_constraintStart_toStartOf="@+id/tvTipAmount"
+        app:layout_constraintTop_toTopOf="@+id/totalAmt"
+        tools:text="1000" />
+
+    <EditText
+        android:enabled="true"
+        android:id="@+id/etBaseAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:ems="8"
+        android:hint="Base Amount"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="@+id/BaseAmount"
+        app:layout_constraintStart_toEndOf="@+id/BaseAmount"
+        app:layout_constraintTop_toTopOf="@+id/BaseAmount"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:rotationX="39"
+        android:text="MADE BY ZOHO DESK "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

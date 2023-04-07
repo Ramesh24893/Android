@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/material_dynamic_neutral40">
+
+    <androidx.fragment.app.FragmentContainerView
+
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/frame_layout1"
+
+        tools:layout="@layout/fragment_fragment2" />
+
+    <androidx.fragment.app.FragmentContainerView
+
+        android:id="@+id/frame_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="130dp"
+        tools:layout="@layout/fragment_fragment2" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="38dp"
+        android:onClick="fragmentOneClicked"
+        android:text="Frag 1" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginEnd="203dp"
+        android:layout_marginBottom="37dp"
+        android:onClick="fragmentTwoClicked"
+        android:text="Frag 2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="218dp"
+        android:layout_marginBottom="41dp"
+        android:onClick="Replace"
+        android:text="Rep" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="43dp"
+        android:onClick="PopBackStack"
+        android:text="Pop" />
+
+
+</RelativeLayout>

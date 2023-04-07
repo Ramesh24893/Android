@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/purple_200">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/material_dynamic_primary80">
+
+
+        <EditText
+            android:layout_gravity="center"
+
+            android:gravity="start"
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:inputType="textPersonName"
+            android:hint="FirstName"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="15sp"
+
+            android:inputType="textPersonName"
+            android:hint="@string/middlename" />
+
+        <EditText
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+
+            android:inputType="textPersonName"
+            android:hint="lastname"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:background="@color/material_dynamic_primary80"
+       >
+
+
+
+        <EditText
+            android:id="@+id/editTextTextPersonName6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:hint="@string/college_name" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="15sp"
+            android:inputType="textPersonName"
+            android:hint="@string/address"
+            android:layout_weight="1"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="1"
+            android:background="@color/material_dynamic_primary80">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="15sp"
+                android:padding="10dp"/>
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/female"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/others"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="15sp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/material_dynamic_primary80"
+        android:layout_margin="10dp">
+
+
+
+
+        <AutoCompleteTextView
+            android:layout_gravity="center|left"
+            android:gravity="center|left"
+            android:id="@+id/autoTextDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/department"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="15sp"
+            android:completionThreshold="0"/>
+
+        <EditText
+            android:id="@+id/autoTextYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginBottom="1dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="start"
+            android:hint="@string/year"
+            android:inputType="number"
+
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/area_of_interest"
+            android:textSize="20sp"
+            android:fontFamily="cursive"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/maths" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sports" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/science" />
+    </LinearLayout>
+
+    <Button
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:id="@+id/button2"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_marginRight="30dp"
+        android:background="@color/design_default_color_primary_dark"/>
+
+
+</LinearLayout>
+</ScrollView>

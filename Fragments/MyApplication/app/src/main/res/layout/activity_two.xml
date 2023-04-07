@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="Activity Two"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/mainbuttonAct3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="18dp"
+        android:text="Activity Three"
+        app:layout_constraintEnd_toStartOf="@+id/mainbuttonAct4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainbuttonActOne" />
+
+    <Button
+        android:id="@+id/mainbuttonAct4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activty Four"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mainbuttonAct3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mainbuttonAct3" />
+
+    <Button
+        android:id="@+id/mainbuttonActOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="14dp"
+        android:text="activity one"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mainbuttonAct2"
+        app:layout_constraintEnd_toStartOf="@+id/mainbuttonAct2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/mainbuttonAct2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="293dp"
+        android:text="Activity Two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mainbuttonActOne"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

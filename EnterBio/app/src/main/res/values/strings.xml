@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EnterBio</string>
+    <string name="address">Address</string>
+    <string name="dob">DOB</string>
+    <string name="favourite_sports">Favourite sports</string>
+    <string name="enter_your_country">Enter your country</string>
+    <string name="username">userName</string>
+    <string name="enter_the_below_data">Enter the Below data</string>
+</resources>

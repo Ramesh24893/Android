@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    tools:context=".SettingsScreen"
+    android:background="@android:color/system_neutral1_50">
+
+
+    <ImageView
+
+        android:id="@+id/img_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+
+
+        android:layout_marginStart="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wifi_img">
+
+    </ImageView>
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/options_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@id/img_icon"
+        android:text="@string/networkinternet"
+        android:textSize="17sp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/option_info_tv"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/options_tv"
+
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="8dp"
+
+        android:layout_toEndOf="@id/img_icon"
+        android:text="@string/mobile_wifi_hotspot"
+        android:textSize="12sp">
+
+    </TextView>
+
+
+</RelativeLayout>

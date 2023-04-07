@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:stretchColumns="2"
+    android:shrinkColumns="1"
+    android:collapseColumns="0"
+
+
+    >
+
+    <TableRow
+
+        android:padding="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Ramesh"
+android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="jj"
+            android:layout_weight="1"
+
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <TextView
+
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:text="hbhnbvnb nb nb  nb bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            android:layout_weight="1"
+
+            android:textSize="16sp"
+            android:gravity="center"/>
+    </TableRow>
+
+    <TableRow
+
+        android:padding="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        >
+
+        <TextView
+
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="Ramehhhsh"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="21"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tiruneveli"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="center"/>
+    </TableRow>
+
+    <TableRow
+
+        android:padding="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TVhggcg"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tethgvhgvhgvg"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Te"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="center"/>
+    </TableRow>
+</TableLayout>

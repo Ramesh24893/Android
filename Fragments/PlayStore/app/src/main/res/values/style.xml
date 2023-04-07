@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="rectangular1">
+        <item name="cornerSize">15%</item>
+    </style>
+    <style name="rectangular2">
+        <item name="cornerSize">20%</item>
+    </style>
+    <style name="rectangular3">
+        <item name="cornerSize">25%</item>
+    </style>
+    <style name="rectangular4">
+        <item name="cornerSize">30%</item>
+    </style>
+    <style name="rectangular5">
+        <item name="cornerSize">10%</item>
+    </style>
+    <style name="rectangular6">
+        <item name="cornerSize">5%</item>
+    </style>
+
+</resources>

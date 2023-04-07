@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RelativeLayout
+    </string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="username">UserName</string>
+    <string name="password">Password</string>
+    <string name="forgot">Forgot</string>
+</resources>

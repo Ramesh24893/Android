@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <CheckBox
+        android:id="@+id/isAdult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Adult"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonAge"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonAge" />
+
+    <Button
+        android:id="@+id/btLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="26dp"
+        android:text="Load"
+        app:layout_constraintEnd_toStartOf="@+id/btSave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isAdult" />
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="8dp"
+        android:text="SAVE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btLoad"
+        app:layout_constraintTop_toBottomOf="@+id/isAdult" />
+
+    <Button
+        android:id="@+id/btClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:text="Clear"
+        app:layout_constraintStart_toEndOf="@+id/btLoad"
+        app:layout_constraintTop_toBottomOf="@+id/btLoad" />
+
+    <Button
+        android:id="@+id/btRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Remove"
+        app:layout_constraintEnd_toStartOf="@+id/btClear"
+        app:layout_constraintTop_toBottomOf="@+id/btClear" />
+
+    <Button
+        android:id="@+id/btCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="46dp"
+        android:text="Check"
+        app:layout_constraintStart_toEndOf="@+id/btClear"
+        app:layout_constraintTop_toBottomOf="@+id/btClear" />
+</androidx.constraintlayout.widget.ConstraintLayout>

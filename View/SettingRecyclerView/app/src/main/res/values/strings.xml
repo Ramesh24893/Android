@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Settings</string>
+    <string name="networkinternet">Network &amp; Internet</string>
+    <string name="mobile_wifi_hotspot">Mobile, Wifi, hotspot</string>
+</resources>
